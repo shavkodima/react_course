@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import User from './component/User';
+import Userlist from './component/UserList';
+import Composableuser from './component/ComposableUser';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <User name='Dima'/>
+      <Userlist />
+      <>-------------Children----------------</>
+      <Composableuser />
     </div>
   );
 }
